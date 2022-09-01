@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar{
+    background: rgba(237, 106, 90, 0.3);
+}
+
+/*Index Styles*/
+    /*Hero*/
+    video {
+        width: auto;
+        height: 100vh;
+    }
+    @media screen and (min-width: 768px) {
+        video {
+            width: 100vw!important;
+            height: auto     !important;
+        }
+    }
