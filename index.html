@@ -9,18 +9,19 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 <body id="indexBody">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
             <a class="navbar-brand" href="./index.html">
                 <img src="./assets/img/valezyl_.png" width="150" height="60" class="d-inline-block align-top" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav ms-auto">
+              <ul class="navbar-nav ms-auto px-3">
                 <li class="nav-item">
                   <a class="nav-link" href="./index.html">Inicio</a>
                 </li>
@@ -42,18 +43,119 @@
               </ul>
             </div>
         </nav>
-        <div id="hero" class="p-0">
-          <video autoplay loop muted>
-            <source src="./assets/videos/hero.mp4" type="video/mp4"/>
+        <!-- Hero Video -->
+        <div class="video-background-holder">
+          <div class="video-background-overlay"></div>
+          <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <source src="./assets/videos/hero.mp4" type="video/mp4">
           </video>
+          <div class="video-background-content container h-100">
+            <div class="d-flex h-100 text-center align-items-center">
+              <div class="w-100 text-white">
+                <h2 class="display-4 text-val1">Valeria Zylbersztejn</h2>
+                <p class="lead mb-0">Movimiento de centros de energía</p>
+              </div>
+            </div>
+          </div>
         </div>
     </header>
-    <div class="container">
-      sjfdasjdfajsd
-    </div>
-    
+    <main class="py-5">
+      <section id="indexIntroduction" class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex flex-row justify-content-center">
+            <img class="rounded-circle mainIndex__icon" src="./assets/icons/indexIcon.png" alt="">
+          </div>
+          <div class="col-12 text-center pb-5 mt-3">
+            <h1 class="h2 text-val1">Movimiento de centros de energía</h1>
+            <p>Movimiento de Centros de Energía ofrece la posibilidad de establecer esa conexión sanadora a través del trabajo corporal</p>
+          </div>
+        </div>
+        <div class="row px-3">
+          <div class="col-sm-12 col-md-8 mb-4">
+            <img class="w-100" src="./assets/img/index1.jpg" alt="">
+          </div>
+          <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-center">
+            <h4 class="mb-3 text-val2 text-center">Nuestra propuesta</h4>
+            <p>
+              Abrir, a través del movimiento, nuevos espacios y vías de exploración e integración de los diferentes niveles que nos constituyen: físico, emocional, mental y espiritual.
+              Reconocernos en la potencia expresiva, en la Vida que fluye dentro nuestro cuando podemos soltar y liberar nuestra energía esencial de amor y fuerza .
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="explains" class="mt-5">
+        <div class="container p-5">
+          <div class="explains__card row explain__card--1">
+            <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-center text-center p-2">
+              <p>
+                La música nos incita a movernos, a desplegar la energía vibrante, a habitar el espacio creativo que nos es dado y espera ser descubierto en toda su dimensión.
+              </p>
+            </div>  
+            <div class="col-sm-12 col-md-8 p-0">
+              <img class="explains__img w-100" src="./assets/img/explains1.jpg" alt="">
+            </div>
+          </div>
+          <div class="explains__card explain__card--2 row">
+            <div class="col-sm-12 col-md-8 p-0">
+              <img class="explains__img w-100" src="./assets/img/explains2.jpg" alt="">
+            </div>
+            <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-center text-center p-2">
+              <p>
+                El cuerpo, presente, despierto y sabio se manifiesta en movimiento, en la alegría y confianza que da el contacto y el deseo de expresar hacia afuera lo que guardamos dentro y manifestar de una manera única y personal la vida en cada uno de nosotros habilitándonos a una relación más amorosa con los demás y con nosotros mismos.
+            </div>  
+          </div>
+          <div class="explains__card explain__card--3 row row-sm-reverse">
+            <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-center text-center p-2">
+              <p>
+                Estar en el presente, animados, inspirados, respirando alegría, y amor, explorando un estado de permanente autoconciencia y de apertura hacia los demás, es el resultado de este tiempo de trabajo corporal, emocional y espiritual al que los invitamos.
+                Descubrirás que es posible amanecer a cada instante. 
 
-    <!-- JavaScript Bundle with Popper -->
+              </p>
+            </div>  
+            <div class="col-sm-12 col-md-8 p-0">
+              <img class="explains__img w-100" src="./assets/img/explains3.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="text-center text-white">
+      <svg viewBox="0 0 1327 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 12 C 337 12 337 110 674 110 L 674 110 L 674 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 673 110 C 1008 110 1008 0 1343 0 L 1343 0 L 1343 0 L 673 0 Z" stroke-width="0"></path> </svg>
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Whatsapp -->
+          <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/valeriazylber/?hl=es" role="button">
+            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+          </a>
+          <!-- Instagram -->
+          <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/valeriazylber/?hl=es" role="button">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <!-- Facebook -->
+          <a target="_blank" class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/valeriazyl.movimiento" role="button">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <!-- Mail -->
+          <a class="btn btn-outline-light btn-floating m-1" href="mailto:valeriazyl@yahoo.com" role="button">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </section>
+        <!-- Section: Social media -->
+      </div>    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://valeriazyl.com/">Valeria Zyl</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+    <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>
+    <script src="./js/main.js"></script>
+    <script src="https://kit.fontawesome.com/830d610cc9.js" crossorigin="anonymous"></script>
+  </body>
 </html>

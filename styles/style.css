@@ -1,23 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap');
 
 body{
-    font-family: 'Raleway', sans-serif;
-    overflow-x: hidden;
+  font-family: 'Baloo 2', cursive;
+  overflow-x: hidden;
+}
+html{
+    height: -webkit-fill-available;
 }
 
 .navbar{
     background: rgba(237, 106, 90, 0.3);
 }
+.text-val1{
+    color: rgb(237, 106, 90);
+}
+.text-val2{
+  color: #ed6a5a;
+}
 
 /*Index Styles*/
-    /*Hero*/
-    video {
-        width: auto;
-        height: 100vh;
+.video-background-holder {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+
+  }
+
+  .video-background-holder video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .video-background-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .video-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  .mainIndex__icon{
+    width: 100px;
+    height: 100px;
+  }
+  #explains{
+    background-color: #fff;
+  }
+  .explains__card{
+    background-color: rgba(237, 106, 90, 0.9);
+    color: #fff;
+  }
+  @media screen and (min-width: 300px) and (max-width: 768px) {
+    .explain__card--2{
+      display:flex; 
+      flex-direction: column-reverse;
     }
-    @media screen and (min-width: 768px) {
-        video {
-            width: 100vw!important;
-            height: auto     !important;
-        }
+  }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .explains__card p{
+      font-size: 80%;
     }
+    .explain__card--2, .explain__card--3, .explain__card--1{
+      font-size: 13px;
+    }
+  }
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
+    .explain__card--2, .explain__card--3{
+      font-size: 15px !important;
+    }
+  }
+
+  footer{
+    background-color: #ed6a5a;
+  }
