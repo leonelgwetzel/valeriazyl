@@ -28,17 +28,20 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Actividades</a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Retiros</a></li>
-                    <li><a class="dropdown-item" href="#">Talleres</a></li>
-                    <li><a class="dropdown-item" href="#">Masajes</a></li>
-                    <li><a class="dropdown-item" href="#">Cronograma</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Retiros</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Talleres</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Masajes</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Psicoterapia</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Centros energéticos</a>
+                  <a class="nav-link" href="#">Centros de energía</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Testimonios</a>
+                  <a class="nav-link" href="#">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -51,7 +54,7 @@
           </video>
           <div class="video-background-content container h-100">
             <div class="d-flex h-100 text-center align-items-center">
-              <div class="w-100 text-white">
+              <div id="hero__caption" class="w-100 text-white">
                 <h2 class="display-4 text-val1">Valeria Zylbersztejn</h2>
                 <p class="lead mb-0">Movimiento de centros de energía</p>
               </div>
@@ -60,6 +63,7 @@
         </div>
     </header>
     <main class="py-5">
+      <!--Introduction-->
       <section id="indexIntroduction" class="container-fluid">
         <div class="row">
           <div class="col-12 d-flex flex-row justify-content-center">
@@ -83,9 +87,10 @@
           </div>
         </div>
       </section>
+      <!--Explain cards-->
       <section id="explains" class="mt-5">
         <div class="container p-5">
-          <div class="explains__card row explain__card--1">
+          <div class="explains__card row explain__card--1 bg-val1">
             <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-center text-center p-2">
               <p>
                 La música nos incita a movernos, a desplegar la energía vibrante, a habitar el espacio creativo que nos es dado y espera ser descubierto en toda su dimensión.
@@ -95,7 +100,7 @@
               <img class="explains__img w-100" src="./assets/img/explains1.jpg" alt="">
             </div>
           </div>
-          <div class="explains__card explain__card--2 row">
+          <div class="explains__card explain__card--2 row bg-val1">
             <div class="col-sm-12 col-md-8 p-0">
               <img class="explains__img w-100" src="./assets/img/explains2.jpg" alt="">
             </div>
@@ -104,12 +109,11 @@
                 El cuerpo, presente, despierto y sabio se manifiesta en movimiento, en la alegría y confianza que da el contacto y el deseo de expresar hacia afuera lo que guardamos dentro y manifestar de una manera única y personal la vida en cada uno de nosotros habilitándonos a una relación más amorosa con los demás y con nosotros mismos.
             </div>  
           </div>
-          <div class="explains__card explain__card--3 row row-sm-reverse">
+          <div class="explains__card explain__card--3 row row-sm-reverse bg-val1">
             <div class="col-sm-12 col-md-4 d-flex flex-column justify-content-center text-center p-2">
               <p>
                 Estar en el presente, animados, inspirados, respirando alegría, y amor, explorando un estado de permanente autoconciencia y de apertura hacia los demás, es el resultado de este tiempo de trabajo corporal, emocional y espiritual al que los invitamos.
                 Descubrirás que es posible amanecer a cada instante. 
-
               </p>
             </div>  
             <div class="col-sm-12 col-md-8 p-0">
@@ -118,9 +122,67 @@
           </div>
         </div>
       </section>
+      <!--Testimonials-->
+      <section id="testimonial" class="container p-2">
+        <div class="row my-5">
+          <div class="col text-center">
+            <h2 class="h1 text-val1"><i class="fa-solid fa-star me-2 mb-5"></i>Testimonios</h2>
+          </div>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide">
+          <div class="carousel-inner">
+              <!-- Single item -->
+              <div class="carousel-item active">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-lg-10 col-xl-8">
+                    <div class="row">
+                      <div
+                        class="col-12 text-center mx-auto mx-lg-0">
+                        <h4 class="mb-4">Silvia</h4>
+                        <p class="mb-0 pb-3 text-secondary">
+                          ¨Participar en el intensivo de Centros de energía es un viaje introspectivo y de descubrimiento personal que va más allá de dejarse ir y fluir con la música. Es un sentirse y un verse las corazas para que con la energía, la fuerza y la mirada de compasión que da el acompañamiento grupal poder trascenderlas para ser más auténtica. Gracias de corazón, Valeria, por esta oportunidad.¨
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Single item -->
+              <div class="carousel-item">
+                <div class="row d-flex justify-content-center">
+                  <div class="col-lg-10 col-xl-8">
+                    <div class="row">
+                      <div class="col-lg-4 d-flex justify-content-center">
+                        <img src="data:image/png;base64,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"
+                          class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
+                          height="150" />
+                      </div>
+                      <div
+                        class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
+                        <h4 class="mb-4">Mar</h4>
+                        <p class="mb-0 pb-3">
+                          ¨Es mi primer retiro con Valeria y ha sido un regalazo tener la experiencia de profundizar en los centros de energía con ella. Valeria tiene el don de la escucha y una presencia que sin duda me ha ayudado a entregarme al movimiento y así, a conectar conmigo. El recorrido por todos los centros ha sido un viaje hacia mí misma que me ha conectado con la alegría de vivir y con mis ganas de compartir con el mundo. Lo recomiendo 100 % ❤. ¨
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
     </main>
-    
-    <footer class="text-center text-white">
+    <!--Footer-->
+    <footer class="text-center text-white bg-val1">
       <svg viewBox="0 0 1327 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 12 C 337 12 337 110 674 110 L 674 110 L 674 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 673 110 C 1008 110 1008 0 1343 0 L 1343 0 L 1343 0 L 673 0 Z" stroke-width="0"></path> </svg>
       <div class="container p-4 pb-0">
         <!-- Section: Social media -->

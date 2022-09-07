@@ -8,26 +8,40 @@ html{
     height: -webkit-fill-available;
 }
 
-.navbar{
-    background: rgba(237, 106, 90, 0.3);
-}
+
 .text-val1{
-    color: rgb(237, 106, 90);
+    /*color: rgb(237, 106, 90);*/
+    color: rgb(153,133,110);
+}
+.bg-val1{
+  background-color: rgb(153,133,110);
 }
 .text-val2{
-  color: #ed6a5a;
+ /* color: #ed6a5a; */
+  color: rgb(153,133,110);
 }
 
 /*Index Styles*/
-.video-background-holder {
-    position: relative;
-    background-color: black;
-    height: 100vh;
-    min-height: 25rem;
-    width: 100%;
-    overflow: hidden;
-
+  #indexBody nav{
+    background-color: rgba(153,133,110,0.3);
   }
+  .dropdown-menu{
+    color: #000 !important;
+    background-color: rgba(153,133,110,0.8) !important;
+  }
+  .dropdown-menu a:hover{
+    color: #000 !important;
+    background-color: rgb(153,133,110) !important;
+  }
+  .video-background-holder {
+      position: relative;
+      background-color: black;
+      height: 100vh;
+      min-height: 25rem;
+      width: 100%;
+      overflow: hidden;
+
+    }
 
   .video-background-holder video {
     position: absolute;
@@ -59,6 +73,15 @@ html{
     opacity: 0.5;
     z-index: 1;
   }
+  @-webkit-keyframes fadeIn { 0% { opacity:0; } 100% { opacity:1; } }
+  @keyframes fadeIn { 0% { opacity:0; } 100% { opacity:1; } }
+  #hero__caption{
+      opacity:0;  /* make things invisible upon start */
+      -webkit-animation: fadeIn 2s ease-in;
+      animation: fadeIn  2s  ease-in;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode:forwards;
+  }
   
   .mainIndex__icon{
     width: 100px;
@@ -68,7 +91,6 @@ html{
     background-color: #fff;
   }
   .explains__card{
-    background-color: rgba(237, 106, 90, 0.9);
     color: #fff;
   }
   @media screen and (min-width: 300px) and (max-width: 768px) {
@@ -90,7 +112,7 @@ html{
       font-size: 15px !important;
     }
   }
-
-  footer{
-    background-color: #ed6a5a;
+  #testimonial .carousel-control-next,
+  .carousel-control-prev{
+      filter: invert(100%);
   }
