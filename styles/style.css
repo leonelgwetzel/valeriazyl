@@ -7,31 +7,44 @@ body{
 html{
     height: -webkit-fill-available;
 }
-
-
+.hr-val{
+  color: rgb(132, 66, 59);
+  width: 300px;
+  border: 1px solid rgb(132, 66, 59);
+}
+.link-val1{
+  color: rgba(191, 95, 84);
+  text-decoration: none;
+}
+.link-val1:hover{
+  color: rgb(132, 66, 59);
+}
 .text-val1{
     /*color: rgb(237, 106, 90);*/
-    color: rgb(153,133,110);
+    color: rgba(191, 95, 84);
 }
 .bg-val1{
-  background-color: rgb(153,133,110);
+  background-color: rgba(191, 95, 84);
 }
 .text-val2{
  /* color: #ed6a5a; */
-  color: rgb(153,133,110);
+  color: rgba(191, 95, 84);
+}
+nav{
+  background-color: rgba(191, 95, 84);
 }
 
 /*Index Styles*/
   #indexBody nav{
-    background-color: rgba(153,133,110,0.3);
+    background-color: rgba(191, 95, 84, 0.3);
   }
   .dropdown-menu{
     color: #000 !important;
-    background-color: rgba(153,133,110,0.8) !important;
+    background-color: rgba(191, 95, 84,0.8) !important;
   }
   .dropdown-menu a:hover{
     color: #000 !important;
-    background-color: rgb(153,133,110) !important;
+    background-color: rgba(191, 95, 84) !important;
   }
   .video-background-holder {
       position: relative;
@@ -115,4 +128,35 @@ html{
   #testimonial .carousel-control-next,
   .carousel-control-prev{
       filter: invert(100%);
+  }
+  @media screen and (max-width: 768px){
+    #testimonial .carousel-item p{
+      width: 75%;
+      margin: auto;
+    }
+    #carouselIndex{
+      height: auto;
+    }
+  }
+  #indexBody footer{
+    margin-top: 150px;
+  }
+/*About*/
+  .about__img{
+    height: 300px;
+    background-color:white;
+    padding:10px 10px 50px 10px;
+    border:1px solid #BFBFBF;
+    box-shadow:10px 10px 20px rgba(81, 80, 80, 0.8);
+  }
+  .about__text{
+    font-size: 18px;
+    color:rgba(54, 54, 54, 0.8);
+  }
+  .about__patternbg{
+    background-image: url("../assets/img/about.jpg");
+    height: 60px;
+  }
+  .about__patternbg h3{
+    opacity: 1 !important;
   }
