@@ -168,25 +168,23 @@ nav{
   #mainHead{
     height: 30vh;
   }
-  #btnModal-CentroBajo{
 
-  }
   .btnModalCentros{
     border: 1px solid #bf5f54 !important;
     background-color: #fff;
     padding: 5px 20px;
     border-radius: 10px;
     color: #bf5f54;
-    width: 200px;
+    width: 225px;
     text-transform: uppercase;
     padding: 5px;
-    text-align: justify !important;
+    text-align: start !important;
   }
   @media screen and (max-width: 500px) {
     .btnModalCentros{
       font-size: 12px;
       padding-top: 10px;
-      width: 150px;
+      width: 180px;
     }
   }
   .nav-tabs .nav-item a, #textTabs .nav-tabs .active{
