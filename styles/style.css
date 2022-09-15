@@ -30,6 +30,9 @@ html{
  /* color: #ed6a5a; */
   color: rgba(191, 95, 84);
 }
+.text-val3{
+  color: rgb(116, 59, 70);
+}
 nav{
   background-color: rgba(191, 95, 84);
 }
@@ -141,7 +144,7 @@ nav{
   #indexBody footer{
     margin-top: 150px;
   }
-/*About*/
+/*About Styles*/
   .about__img{
     height: 300px;
     background-color:white;
@@ -159,4 +162,51 @@ nav{
   }
   .about__patternbg h3{
     opacity: 1 !important;
+  }
+
+/*Centros de energia Styles*/
+  #mainHead{
+    height: 30vh;
+  }
+  #btnModal-CentroBajo{
+
+  }
+  .btnModalCentros{
+    border: 1px solid #bf5f54 !important;
+    background-color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    color: #bf5f54;
+    width: 200px;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: justify !important;
+  }
+  @media screen and (max-width: 500px) {
+    .btnModalCentros{
+      font-size: 12px;
+      padding-top: 10px;
+      width: 150px;
+    }
+  }
+  .nav-tabs .nav-item a, #textTabs .nav-tabs .active{
+    text-decoration: none;
+    font-size: 20px !important;
+    text-transform: uppercase;
+    padding: 0 20px;
+    color: #fff;
+
+  }
+  .activeIcon{
+    display: none;
+  }
+  #textTabs .nav-tabs .active{
+    color: #bf5f54 !important;
+    background-color: #fff;
+    border-bottom: 1px solid #bf5f54;
+
+  }
+  #textTabs #metodo, #textTabs #origenDelSistema, #textTabs #metodo{
+    font-size: 18px;
+    color: #636363;
   }
