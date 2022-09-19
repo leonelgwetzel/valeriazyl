@@ -33,6 +33,10 @@ html{
 .text-val3{
   color: rgb(116, 59, 70);
 }
+.btn-val{
+  background-color: #bf5f54;
+  color: #fff;
+}
 nav{
   background-color: rgba(191, 95, 84);
 }
@@ -215,4 +219,51 @@ nav{
     backdrop-filter: blur( 4.5px );
     -webkit-backdrop-filter: blur( 4.5px );
     border-radius: 10px;
+  }
+
+  #modalIndex{
+    background-color: rgba(0,0,0, 0.56) !important;
+    height: 100vh !important;
+    width: 100vw !important;
+  }
+  #modalIndex .modal-body{
+    background-image: url('https://pbs.twimg.com/media/EcNRKDvWAAAtVf0.jpg');
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80vw;
+  }
+/*Masajes Styles*/
+  .masajes__text{
+    font-size: 18px;
+    color:rgba(54, 54, 54, 0.7);
+  }
+  @media screen and ( max-width: 992px){
+    .masajes__text--space{
+      margin-top: 50px;
+    }
+  }
+
+/*Retiros*/
+  #timer {
+    font-size: 3em;
+    font-weight: 100;
+    color: #bf5f54;
+    text-align: center;
+  }
+  #timer div {
+    display: inline-block;
+    min-width: 90px;
+  }
+  #timer div span {
+    color: #000;
+    display: block;
+    font-size: 0.35em;
+    font-weight: 400;
+  }
+  @media screen and ( max-width: 992px){
+    #timerContainer{
+      margin-top: 50px;
+    }
   }
