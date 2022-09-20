@@ -47,7 +47,8 @@ nav{
   }
   .dropdown-menu{
     color: #000 !important;
-    background-color: rgba(191, 95, 84,0.8) !important;
+    background-color: rgba(191, 95, 84) !important;
+    border: 0px !important;
   }
   .dropdown-menu a:hover{
     color: #000 !important;
