@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body{
   font-family: 'Baloo 2', cursive;
@@ -6,6 +7,9 @@ body{
 }
 html{
     height: -webkit-fill-available;
+}
+.font-bebas{
+  font-family: 'Bebas Neue', cursive;
 }
 .hr-val{
   color: rgb(132, 66, 59);
@@ -262,9 +266,40 @@ nav{
     display: block;
     font-size: 0.35em;
     font-weight: 400;
-  }
+  } 
   @media screen and ( max-width: 992px){
     #timerContainer{
       margin-top: 50px;
     }
   }
+
+/*Clases y talleres*/
+#eventListContainer{
+  width: 400px;
+  margin-top: 30px;
+}
+.eventHeader{
+  letter-spacing: 2px;
+}
+.eventRow{
+  border-bottom: 1px solid #949494;
+}
+
+.eventDate{
+  border-left: 3px solid #bf5f54;
+}
+.eventDate h5{
+  font-size: 30px;
+  margin: 0 !important;
+  
+}
+.eventDate span{
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.eventLink i{
+  display: inline-block;
+}
+.eventLink a{
+  text-decoration: none;
+}
