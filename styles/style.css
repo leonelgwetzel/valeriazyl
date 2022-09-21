@@ -44,6 +44,9 @@ html{
 nav{
   background-color: rgba(191, 95, 84);
 }
+footer a i {
+  font-size: 20px;
+}
 
 /*Index Styles*/
   #indexBody nav{
@@ -274,19 +277,44 @@ nav{
   }
 
 /*Clases y talleres*/
+#infoSelector h5{
+  color: #fff;
+  border: 1px solid #bf5f54;
+}
+#infoSelector h5:hover{
+  background-color: #fff;
+  color: #bf5f54;
+  border: 1px solid #bf5f54;
+  cursor: pointer
+}
+.infoSelectorActive{
+  background-color: #fff;
+  color: #bf5f54 !important;
+  border: 1px solid #bf5f54;
+}
+
 #eventListContainer{
-  width: 400px;
-  margin-top: 30px;
+  width: 40vw;
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px){
+  #eventListContainer{
+    width: 90vw;
+  }
 }
 .eventHeader{
+  padding: 15px 0px;
   letter-spacing: 2px;
+}
+.eventYear{
+  color: #cce68c;
 }
 .eventRow{
   border-bottom: 1px solid #949494;
 }
 
 .eventDate{
-  border-left: 3px solid #bf5f54;
+  border-left: 2px solid #bf5f54;
 }
 .eventDate h5{
   font-size: 30px;
@@ -295,11 +323,13 @@ nav{
 }
 .eventDate span{
   font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 .eventLink i{
   display: inline-block;
 }
 .eventLink a{
+  font-size: 20px;
   text-decoration: none;
+  color: rgb(149, 149, 149) !important;
 }
