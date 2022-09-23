@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('./animations.css');
 
 body{
   font-family: 'Baloo 2', cursive;
@@ -101,15 +102,7 @@ footer a i {
     opacity: 0.5;
     z-index: 1;
   }
-  @-webkit-keyframes fadeIn { 0% { opacity:0; } 100% { opacity:1; } }
-  @keyframes fadeIn { 0% { opacity:0; } 100% { opacity:1; } }
-  #hero__caption{
-      opacity:0;  /* make things invisible upon start */
-      -webkit-animation: fadeIn 2s ease-in;
-      animation: fadeIn  2s  ease-in;
-      -webkit-animation-fill-mode: forwards;
-      animation-fill-mode:forwards;
-  }
+
   
   .mainIndex__icon{
     width: 100px;
@@ -180,6 +173,7 @@ footer a i {
   #mainHead{
     height: 30vh;
   }
+
 
   .btnModalCentros{
     border: 1px solid #bf5f54 !important;
@@ -281,6 +275,7 @@ footer a i {
   color: #fff;
   border: 1px solid #bf5f54;
 }
+
 #infoSelector h5:hover{
   background-color: #fff;
   color: #bf5f54;
@@ -292,6 +287,7 @@ footer a i {
   color: #bf5f54 !important;
   border: 1px solid #bf5f54;
 }
+
 
 #eventListContainer{
   width: 40vw;

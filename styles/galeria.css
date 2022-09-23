@@ -1,0 +1,46 @@
+.blockScroll{
+    overflow-y: hidden;
+}
+#galeria .col-lg-4{
+    padding: 25px;
+    margin: 0 !important;
+}
+#galeria img{
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease-in-out;
+}
+#galeria img:hover{
+    transform: scale(1.1);
+}
+#fullImgBox{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.93);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999 !important;
+
+}
+#fullImg{
+    width: 80%;
+    max-width: 600px;
+}
+
+#fullImgBox span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#videos iframe{
+    width: 100%;
+    padding-top: 25px;
+}
