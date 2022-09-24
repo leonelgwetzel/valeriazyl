@@ -15,8 +15,7 @@ function updateTimer() {
   
     document.getElementById("timer")
       .innerHTML =
-        '<div>' + d + '<span>Días</span></div>' +
-        '<div>' + h + '<span>Horas</span></div>' ;
+        '<div>' + d + '<span>Días</span></div>';
 
   }
   setInterval('updateTimer()', 1000 );
