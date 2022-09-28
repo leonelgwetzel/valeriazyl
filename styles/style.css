@@ -49,6 +49,10 @@ footer a i {
   font-size: 20px;
 }
 
+.blockScroll{
+  overflow-y: hidden;
+}
+
 /*Index Styles*/
   #indexBody nav{
     background-color: rgba(191, 95, 84, 0.3);
@@ -148,6 +152,26 @@ footer a i {
   }
   #indexBody footer{
     margin-top: 150px;
+  }
+
+
+  #bannerRetiro{
+    position: fixed;
+    margin: auto;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0, 0.92);
+  }
+  #bannerRetiro img{
+    width: 80%;
+  }
+  #closeBanner{
+    cursor: pointer;
   }
 /*About Styles*/
   .about__img{
